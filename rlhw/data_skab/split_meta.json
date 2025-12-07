@@ -1,0 +1,24 @@
+{
+  "input": "skab_assembly_like.csv",
+  "rows_total": 44760,
+  "rows_train": 35760,
+  "rows_test": 9000,
+  "groups_total": 373,
+  "groups_train": 298,
+  "groups_test": 75,
+  "group_pos_total": 158,
+  "group_neg_total": 215,
+  "test_ratio": 0.2,
+  "seed": 42,
+  "cols": {
+    "EQUIPMENTID": "EQUIPMENTID",
+    "GROUPNUM": "GROUPNUM",
+    "VALUE": "VALUE",
+    "PRED": "PRED"
+  },
+  "zscore_by_equipment": true,
+  "notes": [
+    "Split is by group keys to prevent leakage.",
+    "Group label = max(pred) within group."
+  ]
+}
